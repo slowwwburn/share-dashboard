@@ -6,9 +6,8 @@ import {
 	useRef,
 	useState,
 } from "react";
-import { axiosInstance } from "./axiosInstance";
+import { axiosInstance } from "../store/axiosInstance";
 import WorkerContext from "./workerContext";
-import { getEffectiveConstraintOfTypeParameter } from "typescript";
 
 export interface LoginUser {
 	email: string;

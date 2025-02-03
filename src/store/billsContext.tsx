@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import { integrationAxios } from "./axiosInstance";
+import { integrationAxios } from "../store/axiosInstance";
 
 export interface BillType {}
 

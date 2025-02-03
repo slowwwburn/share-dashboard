@@ -9,7 +9,7 @@ import {
 import {
 	walletAxios,
 	integrationAxios,
-} from "../../../sharelink/src/store/axiosInstance";
+} from "./axiosInstance";
 import Utils from "./util";
 import PaystackPop from "@paystack/inline-js";
 import DisplayContext from "./displayContext";

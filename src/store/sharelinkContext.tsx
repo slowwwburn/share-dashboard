@@ -6,7 +6,7 @@ import {
 	useRef,
 	useState,
 } from "react";
-import { axiosInstance, axiosInstance2 } from "./axiosInstance";
+import { axiosInstance, axiosInstance2 } from "../store/axiosInstance";
 import AuthContext from "./authContext";
 import Util from "./util";
 import WorkerContext from "./workerContext";
