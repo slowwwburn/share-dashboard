@@ -1,0 +1,61 @@
+.topbar {
+	max-width: 100%;
+	height: 100%;
+}
+
+.container {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.page_title {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.7);
+	gap: 24px;
+}
+
+.balance_parent {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.7);
+	
+	i {
+		font-size: 14px;
+		line-height: normal;
+	}
+
+	.balance span {
+		color: black;
+		font-weight: 600;
+	}
+}
+
+.userImg {
+	width: 40px;
+	height: 40px;
+
+	img {
+		width: 100%;
+	}
+
+	div {
+		width: 100%;
+		height: 100%;
+		color: #000;
+		font-weight: bold;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 25px;
+	}
+}

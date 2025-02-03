@@ -1,0 +1,72 @@
+.share_modal {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	align-items: center;
+
+	.header {
+		font-size: 24px;
+		font-weight: 600;
+	}
+
+	.link {
+		color: var(--primary-color);
+		font-size: 16px;
+		font-weight: 550;
+
+		span {
+			display: flex;
+			gap: 5px;
+		}
+
+		a {
+			text-decoration: underline;
+			color: var(--primary-color);
+		}
+	}
+
+	.socials {
+		display: flex;
+		gap: 18px;
+		font-size: 20px;
+    align-items: center;
+
+    span {
+      cursor: pointer;
+    }
+
+		.whatsapp {
+			background: linear-gradient(45deg, #25d366, #128c7e);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+
+		.facebook {
+			background: linear-gradient(45deg, #1877f2, #0d47a1);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+
+		.instagram {
+			background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+			animation: gradientAnimation 5s ease infinite;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+
+	button {
+		border: none;
+		border-radius: 24px;
+		height: 32px;
+		padding: 6px 12px;
+		font-weight: 550;
+		color: #fff;
+		background-color: var(--primary-color);
+    cursor: pointer;
+	}
+
+	.footer {
+		font-size: 12px;
+	}
+}

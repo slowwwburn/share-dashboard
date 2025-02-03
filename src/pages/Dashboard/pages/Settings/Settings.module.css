@@ -1,0 +1,127 @@
+.container {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	overflow: hidden;
+}
+
+.settings_form {
+	width: 65%;
+	height: 100%;
+	padding: 0 5%;
+	overflow: scroll;
+
+	.form_controls {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+
+		.form_control {
+			display: flex;
+			flex-direction: column;
+			gap: 24px;
+			text-align: left;
+
+			label {
+				font-size: 16px;
+				font-weight: 600;
+			}
+
+			input,
+			input[type="text"],
+			input[type="number"],
+			input[type="date"] {
+				height: 45px;
+				border: none;
+				border-radius: 24px;
+				background-color: var(--tertiary-alt-color);
+				padding: 0 18px;
+			}
+
+			input[type="number"]::-webkit-inner-spin-button,
+			input[type="number"]::-webkit-outer-spin-button {
+				-webkit-appearance: none;
+				margin: 0;
+			}
+
+			/* For Firefox */
+			input[type="number"] {
+				-moz-appearance: textfield;
+			}
+
+			.special_control {
+				padding: 0 18px;
+				display: flex;
+				flex-wrap: wrap;
+				row-gap: 10px;
+
+				span {
+					width: 30%;
+					display: flex;
+					align-items: center;
+					gap: 10px;
+
+					/* input[type="checkbox"] */
+					input {
+						width: 18px;
+						height: 18px;
+						margin: 0px;
+					}
+				}
+			}
+		}
+
+		.group_control {
+			display: flex;
+			justify-content: space-between;
+
+			.form_control {
+				width: 45%;
+
+				.uploader_container {
+					display: flex;
+					align-items: center;
+					gap: 12px;
+					border-radius: 24px;
+					background-color: var(--tertiary-alt-color);
+					height: 45px;
+				}
+
+				.uploader {
+					cursor: pointer;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 45px;
+					height: 45px;
+					background-color: var(--primary-color);
+					color: #fff;
+					border-radius: 24px;
+				}
+
+				.upload {
+					opacity: 0;
+					position: absolute;
+					z-index: -1;
+				}
+
+				#filename {
+					font-weight: normal;
+					margin-left: 10px;
+				}
+
+				#uploadformat {
+					font-size: 60%;
+
+					#uploadsize {
+						font-weight: bold;
+					}
+				}
+			}
+		}
+
+		.form_action {
+			height: 40px;
+		}
+	}
+}

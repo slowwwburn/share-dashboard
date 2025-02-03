@@ -1,0 +1,45 @@
+.modal {
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+
+	.background {
+		background-color: rgba(var(--tertiary-rgb), 0.4);
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+}
+
+.container {
+	width: auto;
+	background-color: #fff;
+	border-radius: 24px;
+	position: relative;
+	padding: 3.5%;
+	z-index: 101;
+}
+
+.close {
+	width: 20px;
+	height: 20px;
+	border-radius: 25px;
+	position: absolute;
+	cursor: pointer;
+	right: 20px;
+	top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--primary-color);
+	color: #fff;
+	/* font-size: 24px; */
+}

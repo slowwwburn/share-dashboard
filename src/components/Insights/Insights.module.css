@@ -1,0 +1,107 @@
+.insights {
+	width: 100%;
+	height: 100%;
+}
+
+.insights_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 3%;
+	height: 100%;
+}
+
+.insight {
+	box-shadow: var(--shadow);
+	/* 0px 0px 4px 0px #868c98; */
+	background-color: #fff;
+	border-radius: 16px;
+	padding: 24px;
+	position: relative;
+	width: 30%;
+	height: 100%;
+
+	.insight_header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 8px;
+		color: var(--primary-color);
+
+		.insight_icon {
+			width: 40px;
+			height: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 8px;
+			background-color: rgba(var(--primary-rgb), 0.065);
+
+			img {
+				width: 24px;
+				height: 24px;
+			}
+		}
+
+		.insight_link {
+			font-size: 16px;
+			font-weight: 550;
+
+			a {
+				color: var(--primary-color);
+				text-decoration-color: none;
+			}
+		}
+
+		span {
+			font-size: 16px;
+			color: var(--primary-color);
+			text-decoration-line: underline;
+			cursor: pointer;
+		}
+	}
+
+	&:nth-child(1) {
+		width: 50%;
+		background-image: url("../../assets/wallet.svg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: #fff;
+
+		.insight_icon {
+			background-color: transparent;
+			border: 2px solid #fff;
+		}
+
+		.insight_link span {
+			color: #fff;
+		}
+	}
+
+	.insight_content {
+		/* position: absolute;
+		left: 24px;
+		top: 50%;
+		transform: translateY(-50%); */
+		display: flex;
+		flex-direction: column;
+		height: 75%;
+		justify-content: end;
+		/* align-items: ; */
+		text-align: left;
+		margin: 0 auto;
+		align-self: center;
+		font-size: 16px;
+
+		.insight_title {
+			color: var(--tertiary-color);
+			font-weight: 500;
+		}
+
+		.insight_value {
+			margin-top: 5px;
+			font-size: x-large;
+			font-weight: 550;
+		}
+	}
+}

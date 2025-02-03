@@ -1,0 +1,142 @@
+[
+	{
+		"id": 1,
+		"narration": "Salary Payment",
+		"amount": 150000,
+		"type": "Credit",
+		"date": "2024-10-01"
+	},
+	{
+		"id": 2,
+		"narration": "Grocery Shopping",
+		"amount": 25000,
+		"type": "Debit",
+		"date": "2024-10-02"
+	},
+	{
+		"id": 3,
+		"narration": "Electricity Bill",
+		"amount": 8000,
+		"type": "Debit",
+		"date": "2024-10-03"
+	},
+	{
+		"id": 4,
+		"narration": "Internet Subscription",
+		"amount": 12000,
+		"type": "Debit",
+		"date": "2024-10-04"
+	},
+	{
+		"id": 5,
+		"narration": "Transfer to Savings",
+		"amount": 50000,
+		"type": "Debit",
+		"date": "2024-10-05"
+	},
+	{
+		"id": 6,
+		"narration": "Freelance Payment",
+		"amount": 70000,
+		"type": "Credit",
+		"date": "2024-10-06"
+	},
+	{
+		"id": 7,
+		"narration": "Gym Membership",
+		"amount": 10000,
+		"type": "Debit",
+		"date": "2024-10-07"
+	},
+	{
+		"id": 8,
+		"narration": "Received from Friend",
+		"amount": 20000,
+		"type": "Credit",
+		"date": "2024-10-08"
+	},
+	{
+		"id": 9,
+		"narration": "Fuel Purchase",
+		"amount": 15000,
+		"type": "Debit",
+		"date": "2024-10-09"
+	},
+	{
+		"id": 10,
+		"narration": "Restaurant Bill",
+		"amount": 18000,
+		"type": "Debit",
+		"date": "2024-10-10"
+	},
+	{
+		"id": 11,
+		"narration": "Bonus Payment",
+		"amount": 40000,
+		"type": "Credit",
+		"date": "2024-10-11"
+	},
+	{
+		"id": 12,
+		"narration": "Netflix Subscription",
+		"amount": 5000,
+		"type": "Debit",
+		"date": "2024-10-12"
+	},
+	{
+		"id": 13,
+		"narration": "Medical Bill",
+		"amount": 25000,
+		"type": "Debit",
+		"date": "2024-10-13"
+	},
+	{
+		"id": 14,
+		"narration": "Refund from Vendor",
+		"amount": 10000,
+		"type": "Credit",
+		"date": "2024-10-14"
+	},
+	{
+		"id": 15,
+		"narration": "Loan Repayment",
+		"amount": 30000,
+		"type": "Debit",
+		"date": "2024-10-15"
+	},
+	{
+		"id": 16,
+		"narration": "Online Shopping",
+		"amount": 22000,
+		"type": "Debit",
+		"date": "2024-10-16"
+	},
+	{
+		"id": 17,
+		"narration": "Payment for Services",
+		"amount": 50000,
+		"type": "Credit",
+		"date": "2024-10-17"
+	},
+	{
+		"id": 18,
+		"narration": "School Fees",
+		"amount": 120000,
+		"type": "Debit",
+		"date": "2024-10-18"
+	},
+	{
+		"id": 19,
+		"narration": "Cash Deposit",
+		"amount": 35000,
+		"type": "Credit",
+		"date": "2024-10-19"
+	},
+	{
+		"id": 20,
+		"narration": "Charity Donation",
+		"amount": 15000,
+		"type": "Debit",
+		"date": "2024-10-20"
+	}
+]

@@ -1,0 +1,202 @@
+.filter {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: space-between;
+	gap: 8px;
+	font-size: medium;
+
+	input:focus {
+		outline: none;
+	}
+}
+
+.search,
+.filterButton button,
+.exportButton button {
+	display: flex;
+	padding: 2px 8px;
+	border-radius: 6px;
+	border: 1px solid #868c98;
+	color: #868c98;
+	gap: 4px;
+	align-items: center;
+	background-color: transparent;
+	font-weight: 450;
+	height: 100%;
+
+	&:hover {
+		border: 1px solid var(--primary-color);
+	}
+}
+
+.search {
+	width: 59%;
+
+	&:focus-within {
+		border: 1px solid var(--primary-color);
+	}
+
+	input {
+		width: 100%;
+		border: none;
+		background-color: transparent;
+		z-index: 1;
+	}
+}
+
+.filterButton,
+.exportButton {
+	width: 18%;
+
+	button {
+		justify-content: center;
+		width: 100%;
+	}
+}
+
+.drop_filter {
+	position: relative;
+}
+
+.filter_container {
+	position: absolute;
+	padding: 0px 5px;
+	right: 0px;
+	top: 38px;
+	width: 365px;
+	background-color: #fff;
+	border-radius: var(--border-radius);
+	z-index: 100;
+}
+
+.filter_container hr {
+	margin: 2.5px;
+}
+
+.filter_header {
+	font-weight: 700;
+	text-align: left;
+}
+
+.filter_content {
+	padding: 0px 10px;
+}
+
+.filter_content button {
+	border: none;
+	text-align: left;
+	padding: 0px 2px;
+	background-color: #fff;
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+.filter_status,
+.filter_bank,
+.filter_principal,
+.filter_date {
+	margin: 10px auto;
+}
+
+.drop_items {
+	width: 100%;
+	margin: 10px auto;
+	padding: 0px 10px;
+}
+
+.drop_items div {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px auto;
+}
+
+.drop_items label {
+	margin: 5px 0px;
+}
+
+.drop_items input {
+	border: 1px solid #ccc;
+	border-radius: var(--border-radius);
+}
+
+.minPrin input,
+.minPrin label,
+.maxPrin input,
+.maxPrin label {
+	width: 92%;
+}
+
+.filter_principal div {
+	justify-content: space-evenly;
+}
+
+.filter_footer {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	gap: 5px;
+}
+
+.filter_header,
+.filter_footer {
+	margin: 7px 0px;
+}
+
+.drop_open {
+	background-color: rgb(102, 104, 105, 0.05);
+}
+
+.filter_footer button {
+	width: 55px;
+	justify-content: center;
+}
+/* Hide the spinner controls */
+input[type="number"] {
+	-moz-appearance: textfield; /* Firefox */
+}
+
+/* Chrome, Safari, Edge */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* animations.css */
+@keyframes slideDown {
+	from {
+		transform: translateY(-20%);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slideUp {
+	from {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	to {
+		transform: translateY(-20%);
+		opacity: 0;
+		display: none;
+	}
+}
+
+.slideDown {
+	animation: slideDown 0.65s forwards;
+	display: block;
+}
+
+.slideUp {
+	animation: slideUp 0.65s forwards;
+	display: none;
+}

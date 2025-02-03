@@ -1,0 +1,65 @@
+.wallet {
+	flex-grow: 1;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: left;
+
+	.top_header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.top_icon {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 20px;
+			color: #fff;
+			background-color: var(--primary-color);
+			border-radius: 50%;
+			width: 40px;
+			height: 40px;
+		}
+	}
+
+	.top_content {
+		font-size: 16px;
+		font-weight: 550;
+		display: flex;
+		justify-content: space-between;
+
+		.wContent_funding {
+			display: flex;
+			align-items: center;
+			/* width: 25%; */
+
+			button {
+				cursor: pointer;
+				border-radius: 20px;
+				border: none;
+				background-color: var(--primary-color);
+				color: #fff;
+				font-weight: bold;
+				width: 100%;
+				padding: 12px;
+			}
+		}
+	}
+
+	.top_header div {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		font-size: 24px;
+		font-weight: 600;
+	}
+
+	/* .top_content {
+    display: flex;
+  } */
+	.wContent_header {
+		font-size: 20px;
+	}
+}

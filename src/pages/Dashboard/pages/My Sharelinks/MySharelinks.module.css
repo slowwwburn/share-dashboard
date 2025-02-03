@@ -1,0 +1,27 @@
+.top {
+	display: flex;
+	justify-content: space-between;
+	gap: 50px;
+	position: relative;
+	margin-bottom: 24px;
+
+	a {
+		text-decoration: none;
+	}
+
+	button {
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 5px;
+		text-align: left;
+		border: none;
+		border-radius: 24px;
+		color: #fff;
+		font-weight: bold;
+		/* font-size: 12px; */
+		background-color: var(--primary-color);
+		padding: 6px 18px;
+	}
+}

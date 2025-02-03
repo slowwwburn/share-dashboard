@@ -1,0 +1,35 @@
+.dash {
+	min-width: 100%;
+	min-height: 100vh;
+	height: 100vh;
+}
+
+.dash_container {
+	position: relative;
+	display: flex;
+	height: 100%;
+}
+
+.dash_side {
+	width: 20%;
+	max-width: 20%;
+	height: 100%;
+}
+
+.dash_content {
+	/* position: absolute; */
+	/* left: 17.5%; */
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+	height: 100%;
+	width: 80%;
+	max-width: 80%;
+	padding: 59px 48px;
+	overflow-y: scroll;
+}
+
+.dash_top {
+	height: 40px;
+	/* margin-bottom: 48px; */
+}
