@@ -6,7 +6,7 @@ import {
 	useRef,
 	useState,
 } from "react";
-import { axiosInstance } from "../store/axiosInstance";
+import { axiosInstance } from "./axiosInstance";
 import WorkerContext from "./workerContext";
 
 export interface LoginUser {
