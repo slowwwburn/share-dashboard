@@ -6,10 +6,7 @@ import {
 	useRef,
 	useState,
 } from "react";
-import {
-	walletAxios,
-	integrationAxios,
-} from "./axiosInstance";
+import { walletAxios, integrationAxios } from "../store/axiosInstance";
 import Utils from "./util";
 import PaystackPop from "@paystack/inline-js";
 import DisplayContext from "./displayContext";
