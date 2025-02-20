@@ -12,6 +12,7 @@ import PaystackPop from "@paystack/inline-js";
 import DisplayContext from "./displayContext";
 import io, { Socket } from "socket.io-client";
 import WorkerContext from "./workerContext";
+import WebSocketContext from "./socketContext";
 
 type WalletType = {
 	id?: string;
@@ -57,6 +58,7 @@ const amountReducer = (state: any, action: any) => {
 export const WalletContextProvider = ({ children }: any) => {
 	const dtx = useContext(DisplayContext);
 	const wtx = useContext(WorkerContext);
+	const { socket } = useContext(WebSocketContext);
 
 	const [wallet, setWallet] = useState<WalletType>({});
 	const [transactions, setTransactions] = useState<any>([]);
@@ -71,30 +73,20 @@ export const WalletContextProvider = ({ children }: any) => {
 		isValid: null,
 	});
 
-	const [socket, setSocket] = useState<typeof Socket | null>(null); // Store the socket instance
-
 	useEffect(() => {
-		const wallet_url = (process.env.REACT_APP_INTEGRATION_URL || "").replace(
-			"/api/v1",
-			""
-		);
-		const token = localStorage.getItem("userToken");
-		const newSocket = io(wallet_url, {
-			auth: { token },
-		});
-		setSocket(newSocket);
-
-		newSocket.on("walletBalanceUpdate", (newBalance: string) => {
+		const handleBalanceUpdate = (newBalance: string) => {
 			setWallet((prev) => ({
 				...prev,
 				balance: Utils.formatNumber(newBalance),
 			}));
-		});
+		};
+
+		socket?.on("walletBalanceUpdate", handleBalanceUpdate);
 
 		return () => {
-			newSocket.disconnect();
+			socket?.off("walletBalanceUpdate", handleBalanceUpdate);
 		};
-	}, []);
+	}, [socket]);
 
 	const { isValid: amountIsValid } = amountState;
 

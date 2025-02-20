@@ -57,7 +57,7 @@ export const Dashboard = () => {
 					)}
 					{atx.isUser.security && <UpdatePassword />}
 					<div className={styles.dash_container}>
-						<div className={styles.dash_side}>
+						<div className={`${styles.dash_side} ${styles.open}`}>
 							<SideNav />
 						</div>
 						<div className={styles.dash_content}>
@@ -67,7 +67,7 @@ export const Dashboard = () => {
 							<Routes>
 								<Route path="/" element={<Overview />} />
 								<Route path="/wallet" element={<Wallet />} />
-								<Route path='/mysharelinks' element={<MySharelinks/>}/>
+								<Route path="/mysharelinks" element={<MySharelinks />} />
 								<Route
 									path="/mysharelinks/create"
 									element={<CreateSharelink />}

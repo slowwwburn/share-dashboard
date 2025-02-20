@@ -243,3 +243,49 @@
 .table {
 	margin-top: 2.1%;
 }
+
+@media (max-width: 768px) {
+	.container {
+		flex-direction: column;
+
+		.left {
+			width: 100%;
+			max-width: 100%;
+			overflow: scroll;
+			/* display: block; */
+
+			.top {
+				flex-direction: column;
+				height: auto;
+
+				.new_link {
+					width: 100%;
+					align-items: center;
+					flex-direction: row-reverse;
+
+					.top_header {
+						.top_icon {
+							font-size: 14px;
+							width: 25px;
+							height: 25px;
+						}
+					}
+				}
+			}
+
+			.middle {
+				overflow: hidden;
+
+				.middle_content {
+					.quick_links {
+						overflow-x: scroll;
+						gap: 10vw;
+					}
+				}
+			}
+		}
+		.right {
+			/* display: none; */
+		}
+	}
+}

@@ -9,25 +9,28 @@ import { AuthContextProvider } from "./store/authContext";
 import { BrowserRouter } from "react-router-dom";
 import { SharelinkContextProvider } from "./store/sharelinkContext";
 import { WalletContextProvider } from "./store/walletContext";
+import { WebSocketContextProvider } from "./store/socketContext";
 
-localStorage.debug = 'socket.io-client:*';
+localStorage.debug = "socket.io-client:*";
 
 const root = ReactDOM.createRoot(document.getElementById("root")!);
 root.render(
 	// <React.StrictMode>
-	<WorkerContextProvider>
-		<AuthContextProvider>
-			<DisplayContextProvider>
-				<SharelinkContextProvider>
-					<WalletContextProvider>
-						<BrowserRouter>
-							<App />
-						</BrowserRouter>
-					</WalletContextProvider>
-				</SharelinkContextProvider>
-			</DisplayContextProvider>
-		</AuthContextProvider>
-	</WorkerContextProvider>
+	<WebSocketContextProvider>
+		<WorkerContextProvider>
+			<AuthContextProvider>
+				<DisplayContextProvider>
+					<SharelinkContextProvider>
+						<WalletContextProvider>
+							<BrowserRouter>
+								<App />
+							</BrowserRouter>
+						</WalletContextProvider>
+					</SharelinkContextProvider>
+				</DisplayContextProvider>
+			</AuthContextProvider>
+		</WorkerContextProvider>
+	</WebSocketContextProvider>
 	// </React.StrictMode>
 );
 

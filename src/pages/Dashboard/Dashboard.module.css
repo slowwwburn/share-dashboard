@@ -33,3 +33,30 @@
 	height: 40px;
 	/* margin-bottom: 48px; */
 }
+
+@media (max-width: 768px) {
+	.dash_container {
+		display: block;
+	}
+
+	.dash_side {
+		width: 100%;
+		max-width: 100%;
+		position: fixed;
+		top: 0;
+		right: -100%; /* Initially hidden off-screen */
+		height: 100vh;
+		background: white;
+		transition: right 0.3s ease-in-out;
+	}
+
+	.dash_side .open {
+		right: 0;
+	}
+
+	.dash_content {
+		width: 100%;
+		max-width: 100%;
+		padding: 2vh 2vw;
+	}
+}

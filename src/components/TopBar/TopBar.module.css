@@ -15,6 +15,10 @@
 	font-weight: bold;
 }
 
+.mobile_logo {
+	display: none;
+}
+
 .content {
 	display: flex;
 	align-items: center;
@@ -28,7 +32,7 @@
 	gap: 5px;
 	font-size: 16px;
 	color: rgba(0, 0, 0, 0.7);
-	
+
 	i {
 		font-size: 14px;
 		line-height: normal;
@@ -57,5 +61,28 @@
 		justify-content: center;
 		align-items: center;
 		border-radius: 25px;
+	}
+}
+
+@media (max-width: 768px) {
+	.page_title {
+		display: none;
+	}
+
+	.mobile_logo {
+		display: flex;
+		gap: 5px;
+
+		img {
+			height: 2.5vh;
+		}
+
+		.logo_text {
+			font-weight: bold;
+		}
+	}
+
+	.balance_parent {
+		display: none;
 	}
 }

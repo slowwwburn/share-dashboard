@@ -4,6 +4,7 @@ import { useContext } from "react";
 import userImg from "../../assets/Handsome man sunglasses orange.png";
 import WalletContext from "../../store/walletContext";
 import AuthContext from "../../store/authContext";
+import logo from "../../assets/share_logo.svg";
 
 export const TopBar = () => {
 	const { pageTitle, showBalance, onToggleBalance } =
@@ -15,6 +16,10 @@ export const TopBar = () => {
 		<div className={styles.topbar}>
 			<div className={styles.container}>
 				<div className={styles.page_title}>{pageTitle}</div>
+				<div className={styles.mobile_logo}>
+					<img src={logo} alt='logo'/>
+					<span className={styles.logo_text}>Sharelink</span>
+				</div>
 				<div className={styles.content}>
 					<div className={styles.balance_parent}>
 						<i

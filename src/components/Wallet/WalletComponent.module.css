@@ -63,3 +63,10 @@
 		font-size: 20px;
 	}
 }
+
+
+@media (max-width: 768px){
+	.wallet {
+		gap: 5vh;
+	}
+}
